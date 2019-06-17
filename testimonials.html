@@ -40,7 +40,21 @@
   <link rel="stylesheet" href="css/testimonials.css">
 
 </head>
-
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+(function () {
+var options = {
+whatsapp: "+91-9167290285", // WhatsApp number
+call_to_action: "Message us", // Call to action
+position: "left", // Position may be 'right' or 'left'
+};
+var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+})();
+</script>
+<!-- /WhatsHelp.io widget -->
 <body>
 
 
@@ -70,20 +84,32 @@
       </div>
       <!-- main menu -->
       <nav class="collapse navbar-collapse navbar-right" role="navigation">
-        <div class="main-menu">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="testimonials.html">Testimonial</a></li>
-            <li><a href="affiliations.html">Affiliation</a></li>
-            <li><a href="contact.html">Blog</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="career.html">Career with us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
+                      <div class="main-menu">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="index.html" >Home</a></li>
+                              <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+                                  <div class="dropdown-menu">
+                                      <ul>
+                                        <li><a href="web-designing.html">Web Designing</a></li>
+                                        <li><a href="website-development.html">Website Development</a></li>
+                                        <li><a href="digital.html">Digital Marketing </a></li>
+                                        <li><a href="inventory-software.html">Inventory Software </a></li>
+                                        <li><a href="technicak-consultancy.html">Technical Consultancy</a></li>
+                                        <li><a href="research-and-development.html">Research and development </a></li>
+                                      </ul>
+                                  </div>
+                              </li>
+                              <li><a href="portfolio.html">Portfolio</a></li>
+                              <li><a href="testimonials.html">Testimonial</a></li>
+                              <li><a href="affiliations.html">Affiliation</a></li>
+                              <li><a href="https://trudawnsolutions.com/blog/2019/06/07/reasons-for-starting-a-website-for-your-business/">Blog</a></li>
+                              <li><a href="about-us.html">About Us</a></li>
+                              <li><a href="career-with-us.html">Career with us</a></li>
+                              <li><a href="contact-us.html">Contact Us</a></li>
+                          </ul>
+                      </div>
+                  </nav>
       <!-- /main nav -->
     </div>
   </header>
@@ -248,7 +274,7 @@
                   <div class="card-body text-center">
                     <p><img class=" img-fluid" src="images/clients/priyanka.jpg" alt="card image"></p>
                     <h4 class="card-title">Priyanka Pistolwala</h4>
-                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                    <p class="card-text">?</p>
                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-quote-left"></i></a>
                   </div>
                 </div>
@@ -283,9 +309,9 @@ KUDOS to Shruti and her team...!!</p>
               <div class="frontside">
                 <div class="card">
                   <div class="card-body text-center">
-                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg" alt="card image"></p>
-                    <h4 class="card-title">Sunlimetech</h4>
-                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                    <p><img class=" img-fluid" src="images/clients/john_doe.jpg" alt="card image"></p>
+                    <h4 class="card-title">John_Doe</h4>
+                    <p class="card-text">??</p>
                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-quote-left"></i></a>
                   </div>
                 </div>
@@ -294,7 +320,7 @@ KUDOS to Shruti and her team...!!</p>
                 <div class="card">
                   <div class="card-body text-center mt-4">
                     <h4 class="card-title">Sunlimetech</h4>
-                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                    <p class="card-text">Trudawn Solutions exceeded our expectations when they created a website for us. The work which was put in by their team was outstanding! We are glad that we chose Trudawn Solutions to build our website. We also thank Shruti for the dedication and support which she put in while coordinating with us. Our vision for our website was delivered in the best possible manner. None of this would have been possible without Trudawn Solutions.</p>
                     <ul class="list-inline">
                       <li class="list-inline-item">
 
@@ -380,6 +406,9 @@ KUDOS to Shruti and her team...!!</p>
                         </div>
                     </div>
                 </footer><!-- /#footer -->
+                <section id="footer2">
+
+                </section>
 
                 <script src="plugins/jQurey/jquery.min.js"></script>
                 <!-- Form Validation -->
